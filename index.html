@@ -1,137 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Management</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+
+      #home {
+        background: url("hotel.jpg") no-repeat center center/cover;
+        color: #fff;
+        padding: 100px 20px;
+      }
+
+      #home h1 {
+        font-size: 3em;
+        margin: 0;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      #home p {
+        font-size: 1.2em;
+        margin: 20px 0;
+        animation: fadeIn 3s ease-in-out;
+      }
+
+      .btn {
+        background-color: #ff6347;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        animation: fadeIn 4s ease-in-out;
+      }
+
+      #about,
+      #services,
+      #contact {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 40px 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
 
     <section id="home">
-        <h1>Welcome to Our Hotel</h1>
-        <p>Experience luxury and comfort at our hotel.</p>
-        <a href="#booking" class="btn">Book Now</a>
+      <h1>Welcome to Our Hotel</h1>
+      <p>Experience luxury and comfort at our hotel.</p>
+      <a href="#booking" class="btn">Book Now</a>
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>Our hotel offers the best services and amenities to make your stay memorable.</p>
+      <h2>About Us</h2>
+      <p>
+        Our hotel offers the best services and amenities to make your stay
+        memorable.
+      </p>
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Room Service</li>
-            <li>Spa and Wellness</li>
-            <li>Restaurant and Bar</li>
-            <li>Conference Rooms</li>
-        </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Room Service</li>
+        <li>Spa and Wellness</li>
+        <li>Restaurant and Bar</li>
+        <li>Conference Rooms</li>
+      </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@hotelmanagement.com</p>
-        <p>Phone: +123 456 7890</p>
+      <h2>Contact Us</h2>
+      <p>Email: info@hotelmanagement.com</p>
+      <p>Phone: +123 456 7890</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Hotel Management. All rights reserved.</p>
+      <p>&copy; 2023 Hotel Management. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-#home {
-    background: url('hotel.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 20px;
-}
-
-#home h1 {
-    font-size: 3em;
-    margin: 0;
-    animation: fadeIn 2s ease-in-out;
-}
-
-#home p {
-    font-size: 1.2em;
-    margin: 20px 0;
-    animation: fadeIn 3s ease-in-out;
-}
-
-.btn {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    animation: fadeIn 4s ease-in-out;
-}
-
-#about, #services, #contact {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 40px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
